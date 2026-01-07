@@ -1,0 +1,19 @@
+{
+  "name": "bloging app",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.1",
+    "@prisma/extension-accelerate": "^3.0.1",
+    "hono": "^4.11.3",
+    "prisma": "^6.19.1",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "wrangler": "^4.4.0"
+  }
+}
